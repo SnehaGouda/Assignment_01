@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.subscribe {
+  background-color: #a4c7de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.subscribe input {
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 250px;
+}
+.subscribe button {
+  padding: 8px 15px;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.collection {
+  text-align: left;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.collection .h2, .collection .p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collection .h2 {
+  color: #d4a017;
+  font-size: 24px;
+  font-weight: bold;
+  border-left: 20px;
+}
+.collection .p {
+  max-width: 600px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+.collection .filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.collection .filter-buttons button {
+  display: absolute;
+  padding: 5px 15px;
+  border: 1px solid #d4a017;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.collection .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+}
+.collection .product-grid .product {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.collection .product-grid .product .img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.collection .product-grid .product p {
+  font-size: 14px;
+  color: purple;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.collection .show-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #d4a017;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.story {
+  position: relative;
+  text-align: center;
+  padding: 100px 50px;
+  color: black;
+  background: url("city.jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.story h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.story .brand-name {
+  background-color: orange;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.story p {
+  max-width: 600px;
+  font-size: 14px;
+  color: black;
+}
+.story button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  background: none;
+  color: black;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .subscribe {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .collection .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .collection .product-grid .product {
+    width: 80%;
+  }
+  .story {
+    padding: 50px 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */
